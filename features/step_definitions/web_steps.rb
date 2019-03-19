@@ -43,6 +43,15 @@ Given /^the blog is set up$/ do
                 :state => 'active'})
 end
 
+#add for existent category
+Given /^that Movie categories are added$/ do
+  Category.create!({:name => 'Movie',
+                    :permalink => 'movie',
+                    :keywords => 'comedy, action, romance, thriller, animation, sci-fi',
+                    :description => 'This categorie includes articles that are related to movies.'
+  })
+end
+
 And /^I am logged into the admin panel$/ do
   visit '/accounts/login'
   fill_in 'user_login', :with => 'admin'
