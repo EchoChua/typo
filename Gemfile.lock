@@ -187,6 +187,7 @@ DEPENDENCIES
   cucumber-rails-training-wheels
   database_cleaner
   factory_girl (~> 2.2)
+  flickraw (= 0.9.6)
   flickraw-cached
   htmlentities
   json
